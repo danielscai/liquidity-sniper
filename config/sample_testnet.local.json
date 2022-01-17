@@ -1,0 +1,55 @@
+{
+    "chain": {
+        "nodes": {
+            "stream": "/home/ec2-user/geth/geth.ipc",
+            "snipe": "/home/ec2-user/geth/geth.ipc",
+            "configure": "https://data-seed-prebsc-1-s1.binance.org:8545/"
+        },
+        "id": 97,
+        "name": "bsc-testnet"
+    },
+    "order": {
+        "size": 0.1,
+        "expected_tokens": 4200.9
+    },
+    "contract": {
+        "trigger": "<your trigger>",
+        "factory": "0xb7926c0430afb07aa7defde6da862ae0bde767bc",
+        "router": "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3",
+        "factory_creation_code": "0xecba335299a6693cb2ebc4782e74669b84290b6378ea3a3873c7231a8d7d1074"
+    },
+    "token": {
+        "address": "<your trigger>",
+        "pair_address": "0xe0e92035077c39594793e61802a350347c320cf2",
+        "wbnb": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+        "busd": "0x78867bbeef44f2326bf8ddd1941a4439382ef2a7"
+    },
+    "accounts": {
+        "admin": "<your pk>",
+        "disperser": "<your pk>"
+    },
+    "previewer": {
+        "ext_order_size": 1,
+        "liquidity_in_bnb": 0.5,
+        "liquidity_in_token": 1000
+    },
+    "swarm": {
+        "rounds": 2,
+        "spread_amount": 0.1,
+        "path": "./config/bee_book.json"
+    },
+    "sniper": {
+        "mode": "pending_txs",
+        "minimum_liquidity": 80,
+        "monitors": {
+            "address_list": {
+                "enabled": false,
+                "list": []
+            },
+            "whale": {
+                "enabled": false,
+                "min": "0"
+            }
+        }
+    }
+}

@@ -31,7 +31,7 @@
     "scripts": {
         "build": "go build ./cmd/ax-50",
         "deploy": "sudo truffle migrate --reset",
-        "deploy-testnet": "sudo truffle migrate --network bsctestnet",
+        "deploy-testnet": "truffle migrate --network bsctestnet",
         "order-preview": "ts-node scripts/order_preview.ts",
         "create-swarm": "ts-node scripts/swarm_factory.ts",
         "refund-swarm": "ts-node scripts/swarm_refund.ts",

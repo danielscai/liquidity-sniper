@@ -7,3 +7,4 @@ config/local.json
 config/bee_book.json
 .env
 ax-50
+ax-50-linux

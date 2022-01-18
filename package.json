@@ -30,12 +30,14 @@
     },
     "scripts": {
         "build": "go build ./cmd/ax-50",
+        "build-linux": "CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build ./cmd/ax-50 && mv ax-50 ax-50-linux",
         "deploy": "sudo truffle migrate --reset",
         "deploy-testnet": "truffle migrate --network bsctestnet",
         "order-preview": "ts-node scripts/order_preview.ts",
         "create-swarm": "ts-node scripts/swarm_factory.ts",
         "refund-swarm": "ts-node scripts/swarm_refund.ts",
         "configure-trigger": "ts-node scripts/trigger_configurer.ts",
+        "trigger-info": "ts-node scripts/trigger_info.ts",
         "withdraw-trigger": "ts-node scripts/trigger_withdrawal.ts"
     },
     "keywords": [],

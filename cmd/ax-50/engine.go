@@ -50,9 +50,11 @@ func (e *Engine) Run(ctx context.Context) {
 			e.consumeBlocking(ctx, ch)
 		}(ctx, ch, wg)
 	}
+	log.Info(fmt.Sprintf("Starts %d workers", workers))
 
 	// Subscribe to receive one time events for new txs
 	e.subscribeSafe(ctx, ch, canc)
+	log.Info("Engine Starts Succefully. Happy Snipe")
 
 	// Block forever (or until the ctx gets cancelled / an error occurs)
 	wg.Wait()

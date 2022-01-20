@@ -59,6 +59,7 @@ func main() {
 	}
 
 	configureLog(logLevel)
+	log.Info(fmt.Sprintf("set log level: %s", logLevel.AlignedString()))
 	ctx := context.Background()
 
 	dir := os.Getenv(configFolderEnv)
